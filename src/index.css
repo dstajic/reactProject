@@ -1,0 +1,297 @@
+:root {
+  /*background-image: url('images/bg.jpg');*/
+  background-color: white;
+  
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/*NAV*/
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+#nav{
+	text-align:left;
+	background-color: #333;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
+  display:flex;
+  
+	
+}
+
+#nav ul{
+  
+	display:inline-block;
+	margin-bottom:0px;
+  margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#nav li{
+	padding-left:20px;
+	padding-right:20px;
+	display:inline-block;
+	padding-bottom:19px;
+	padding-top:19px;
+	background-color: #333;
+	font-size:16px;
+	font-family:'Serif';
+  color: white;
+}
+
+#nav li:hover{
+	color:#56d285;
+	background-color: #111;
+}
+.active {
+  background-color: #04AA6D;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 17.5px;
+  font-size: 17.4px;
+  border: none;
+  cursor: pointer;
+  font-family:'Serif';
+  
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  
+  position: relative;
+  display: inline-block;
+  font-family:'Serif';
+  font-size: 15px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 170.5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family:'Serif';
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family:'Serif';
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+
+
+.slide-container{
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+
+/*MARQ*/
+
+
+.marquee {
+  margin-left: -8px;
+  position: relative;
+  width: 7000px;
+  height: 35px;
+  padding-top: 15px;
+  overflow-x: hidden;
+  font-size: 17px;
+  background-color: #333;
+  color:white;
+  font-family:'Serif';
+  
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/*ABOUT*/
+
+.container {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  background-color: #292828;
+  margin-top: -20px;
+  margin-right: -10px;
+  color:rgb(187, 181, 181);
+  margin-left: -10px;
+ }
+ 
+ #pic1{
+  width: 600px;
+  height: 800px;
+ }
+ 
+ .TXT {
+   margin-left:-470px;
+   margin-right:30px;
+   margin-top:-200px;
+   font-size: 20px;
+   
+ }
+ .TITLE{
+  text-align: center;
+  margin-top: -650px;
+  margin-left: 370px;
+  font-size: 40px;
+  
+ }
+
+/*Footer*/
+
+.logo{
+  width: 40px;
+  height: 40px;
+}
+.footerTitle{
+  font-family:'Serif';
+  color:rgb(236, 230, 230);
+  text-align: center;
+}
+.FOOTER{
+  margin-top: -24px;
+  margin-left:-20px;
+  margin-right: -20px;
+  background-color: rgb(37, 35, 35);
+  float:center;
+  margin-bottom: -20px;
+}
+.info{
+  float:left;
+  color:white;
+  margin-left:50px;
+  margin-top:-60px;
+  overflow:hidden;
+}
+.info2{
+  float:right;
+  color:white;
+  margin-right: 50px;
+  margin-top:-60px;
+  overflow:hidden;
+}
+#topLink{
+  color:white;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*PRODUCT*/
+
+.productIMG{
+  width: 300px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+.products{
+
+  background-color: #3e8e41;
+margin-left: -10px;
+margin-right: -20px;
+display: inline-flex;
+width: 20000px;
+text-align: center;
+font-family:'Serif';
+
+}
+.under1{
+  color:rgb(195, 223, 195);
+  font-family:'Serif';
+  background-color: #3e8e41;
+}
+.underClub{
+text-align: center;
+color:rgb(195, 223, 195);
+margin-top:-100px;
+background-color: #3e8e41;
+margin-left:-20px;
+margin-right: -20px;
+padding: 10px;
+
+}
+.product1{
+  width: 300px;
+  height: 500px;
+  margin-left: 150px;
+}
+.product2{
+  width: 300px;
+  height: 500px;
+}
+.product3{
+  width: 300px;
+  height: 500px;
+  
+}
+.product4{
+  width: 300px;
+  height: 500px;
+}
+.productTitle{
+  color:rgb(195, 223, 195);
+  text-align: center;
+  background-color: #3e8e41;
+  margin-bottom: 0px;
+  margin-top: -4px;
+  margin-left: -20px;
+  margin-right: -20px;
+  font-family:'Serif';
+}
